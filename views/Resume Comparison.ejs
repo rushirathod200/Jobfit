@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden"
+      style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(92,116,138)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: Inter, &quot;Noto Sans&quot;, sans-serif;"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#101518] tracking-light text-[32px] font-bold leading-tight min-w-72">Resume Comparison</p></div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101518] focus:outline-0 focus:ring-0 border border-[#d4dce2] bg-gray-50 focus:border-[#d4dce2] h-14 bg-[image:--select-button-svg] placeholder:text-[#5c748a] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101518] focus:outline-0 focus:ring-0 border border-[#d4dce2] bg-gray-50 focus:border-[#d4dce2] h-14 bg-[image:--select-button-svg] placeholder:text-[#5c748a] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#dce8f3] text-[#101518] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Compare</span>
+              </button>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#101518] tracking-light text-[32px] font-bold leading-tight min-w-72">Resume Comparison Results</p>
+            </div>
+            <h2 class="text-[#101518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Score Differences</h2>
+            <div class="p-4">
+              <div class="flex justify-between gap-x-6 py-2">
+                <p class="text-[#5c748a] text-sm font-normal leading-normal">Overall Score</p>
+                <p class="text-[#101518] text-sm font-normal leading-normal text-right">85%</p>
+              </div>
+              <div class="flex justify-between gap-x-6 py-2">
+                <p class="text-[#5c748a] text-sm font-normal leading-normal">Skills Match</p>
+                <p class="text-[#101518] text-sm font-normal leading-normal text-right">90%</p>
+              </div>
+              <div class="flex justify-between gap-x-6 py-2">
+                <p class="text-[#5c748a] text-sm font-normal leading-normal">Experience Alignment</p>
+                <p class="text-[#101518] text-sm font-normal leading-normal text-right">80%</p>
+              </div>
+            </div>
+            <h2 class="text-[#101518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recommendation Engine</h2>
+            <p class="text-[#101518] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Based on the comparison, we recommend focusing on enhancing the skills match and experience alignment in Resume 2 to achieve a higher overall score.
+            </p>
+            <h2 class="text-[#101518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Version Management</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#d4dce2] bg-gray-50">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-gray-50">
+                      <th class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-120 px-4 py-3 text-left text-[#101518] w-[400px] text-sm font-medium leading-normal">Version</th>
+                      <th class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-240 px-4 py-3 text-left text-[#101518] w-[400px] text-sm font-medium leading-normal">Date</th>
+                      <th class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-360 px-4 py-3 text-left text-[#101518] w-[400px] text-sm font-medium leading-normal">Score</th>
+                      <th class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-480 px-4 py-3 text-left text-[#101518] w-60 text-[#5c748a] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#d4dce2]">
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-120 h-[72px] px-4 py-2 w-[400px] text-[#101518] text-sm font-normal leading-normal">
+                        Version 1
+                      </td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-240 h-[72px] px-4 py-2 w-[400px] text-[#5c748a] text-sm font-normal leading-normal">
+                        2023-01-15
+                      </td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-360 h-[72px] px-4 py-2 w-[400px] text-[#5c748a] text-sm font-normal leading-normal">75%</td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-480 h-[72px] px-4 py-2 w-60 text-[#5c748a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d4dce2]">
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-120 h-[72px] px-4 py-2 w-[400px] text-[#101518] text-sm font-normal leading-normal">
+                        Version 2
+                      </td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-240 h-[72px] px-4 py-2 w-[400px] text-[#5c748a] text-sm font-normal leading-normal">
+                        2023-02-20
+                      </td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-360 h-[72px] px-4 py-2 w-[400px] text-[#5c748a] text-sm font-normal leading-normal">80%</td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-480 h-[72px] px-4 py-2 w-60 text-[#5c748a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d4dce2]">
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-120 h-[72px] px-4 py-2 w-[400px] text-[#101518] text-sm font-normal leading-normal">
+                        Version 3
+                      </td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-240 h-[72px] px-4 py-2 w-[400px] text-[#5c748a] text-sm font-normal leading-normal">
+                        2023-03-25
+                      </td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-360 h-[72px] px-4 py-2 w-[400px] text-[#5c748a] text-sm font-normal leading-normal">85%</td>
+                      <td class="table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-480 h-[72px] px-4 py-2 w-60 text-[#5c748a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-120{display: none;}}
+                @container(max-width:240px){.table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-240{display: none;}}
+                @container(max-width:360px){.table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-360{display: none;}}
+                @container(max-width:480px){.table-ba6a6536-ba6d-493a-a358-2d371818b5ab-column-480{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

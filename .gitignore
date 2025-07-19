@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# dotenv environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Vscode settings
+.vscode/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Build output
+dist/
+build/
+
+# Debug log from Mac
+*.swp

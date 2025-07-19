@@ -1,0 +1,577 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
+      style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(73,116,156)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: Inter, &quot;Noto Sans&quot;, sans-serif;"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d151c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em]">JobFit Pro</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="#">Jobs</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="#">Candidates</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="#">Sourcing</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="#">Reports</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="#">Automation</a>
+            </div>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#e7edf4] text-[#0d151c] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#0d151c]" data-icon="Bell" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5lJeVLcVv9kAuoxP9eT3raywfGl96ZVNaE42maPsLbYyDj6Uvp05-HMiR176PUAVWd6iCAiQpunCgT-6TtNR4U_AcQqILfy-H59hfTfDGvgNNJegl23xINZwmkdrSH9Fo_3W2tTNwe_53JKJXb8gaUqUvdFqWhw166dcAhK0i986ZQy1osIb_4t_J0TLIZKK7Rdrhw7K6TI6wkmb_sa8fO0r3h6n1akSKnp6pOpCUGSsPmSZ6PHznwzNcJ3HQYatcCCFd3ItA");'
+            ></div>
+          </div>
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <h2 class="text-[#0d151c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Candidates</h2>
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div
+                    class="text-[#49749c] flex border-none bg-[#e7edf4] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Search candidates"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-full placeholder:text-[#49749c] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+            </div>
+            <div class="pb-3">
+              <div class="flex border-b border-[#cedce8] px-4 gap-8">
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4" href="#">
+                  <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">All candidates</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4" href="#">
+                  <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">New</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#0b80ee] text-[#0d151c] pb-[13px] pt-4" href="#">
+                  <p class="text-[#0d151c] text-sm font-bold leading-normal tracking-[0.015em]">Screening</p>
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjw5sWDROsi0cT5yA25EtsLikXO10Sj7SphRMNGsB7qMn8aAfbc-QpR7utPBxoy6W75WkBcKRJ01exW7k6N_8GDZLQGkHZDlcsIWl4G_sFmTsMeeB2NOCqz5H9WljHM9iM1Fmr-CDA1BFNRwS3mOldm_Q8OkGCCDIeF9HqLsOlswr6X_nny1bE7XKUQoQaWDiTwvVFGShY4zswt8SIIU0TXtjod05-hYTyILFqc2xmSId3iRsCxBcKmnQiHQjfSKAouH8efy9K");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Ethan Harper</p>
+                <p class="text-[#49749c] text-sm font-normal leading-normal line-clamp-2">ATS Score: 92</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDW6n5nsXYrBgUeq2sZ7qfpMqUQMfKvr11o7dsFcqE3xhd7iDOX-4BQxXQjekCih8bRhK8ANuxFH_3_K7bt5hr-SBSXQepFpjcWz23ksuibRGE5wB4OJW6wVe7JWvK7KMEgBo_t0NLzDf_MDl-OnpPtavG5xKqLSDNzIiBvWGQrQUfb0ppP97VgKHEyvlQGhzmzoMdaPh7Yvd0fwc8XCtdjsSZZ8BP-d8x-8tZ_c2bcPN_I0ZzzUsGCScKyXrLtnaUEEr3lNbGw");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Olivia Bennett</p>
+                <p class="text-[#49749c] text-sm font-normal leading-normal line-clamp-2">ATS Score: 88</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcIHb-TzAB5Eaa_7Asc39gJO6_PTXOqeYvlsZk0mmOVj2xGvz8mVyEGVbgvMd-sRiZsqZfjd1_Z8AoL9cPO7okyxQ9P5GzsiFDPMh3kKK1AEy7Jo0_ZCVQj3utJXVeh1zZyMo3ho2GbnzZXVWFSc2-UMp7MnyOS5VHQHjZynhFF4RYLhe_-v-2VgtGbeT0XgC5xYJ9TYq0GZAscrz88sbuEh-XNTDVNoMfWfeKqlp2G-q9zE0Rjc9QeISY8djYYa9NN_pXD-t4");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Noah Carter</p>
+                <p class="text-[#49749c] text-sm font-normal leading-normal line-clamp-2">ATS Score: 85</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7bUOZCtt1_Ug_oijq1B4H7rfkbhoYPce68Izec8EQtEcPxoX9U3im5MQ5A_fYVnJr6z4G2xEZ7cSPCsTdpKikFKdz9FmRmeDsA1ymAQFAH5NRE-pc75Olb_MC7cfh4tdkH2AmMT03lNw7X8DOzD993qkciK6qFCiGeUbaUFt682iueRH4O3RSA634_p2b0P99IqLkKOQu2TcojtfpgIQzNuE_iHHryqEskZ-VfZA4qnXBHbSngqloVXU83vw4FOQx9_1fVz4w");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Ava Mitchell</p>
+                <p class="text-[#49749c] text-sm font-normal leading-normal line-clamp-2">ATS Score: 82</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSTq_53D8F8k-6Esn7vwY4rrGm4pn5iF9RXz51FxvDHC1CKbPjMsCQtBupOuXS9uI0L0ctrhUaQlreMk7_R2RO4WjlSoxONq76mUCpHVC0SQaNdT5s8SBMyqLWbaSvRlPH-sb272zqN-_y7Vcj2iWAjHAoMHyMP0f-2qvMyBpygw7NseB7VhK4DYxMPhfa__qVp4DnQDiIsn30HTl0V4dOYDLVIC0lyMqyLCrzyCx_sQ3TXxRrZnhb1_f8ySzed06GjyaTNJiR");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Liam Foster</p>
+                <p class="text-[#49749c] text-sm font-normal leading-normal line-clamp-2">ATS Score: 79</p>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight">Ethan Harper</p>
+                <p class="text-[#49749c] text-sm font-normal leading-normal">ATS Score: 92</p>
+              </div>
+            </div>
+            <div class="pb-3">
+              <div class="flex border-b border-[#cedce8] px-4 gap-8">
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#0b80ee] text-[#0d151c] pb-[13px] pt-4" href="#">
+                  <p class="text-[#0d151c] text-sm font-bold leading-normal tracking-[0.015em]">Resume</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4" href="#">
+                  <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Profile</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4" href="#">
+                  <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Activity</p>
+                </a>
+              </div>
+            </div>
+            <h3 class="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Resume Screening</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 bg-[image:--select-button-svg] placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 bg-[image:--select-button-svg] placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 bg-[image:--select-button-svg] placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#cedce8] bg-slate-50">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-slate-50">
+                      <th class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-120 px-4 py-3 text-left text-[#0d151c] text-sm font-medium leading-normal"></th>
+                      <th class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-240 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        Candidate
+                      </th>
+                      <th class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-360 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        ATS Score
+                      </th>
+                      <th class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-480 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        Job Title
+                      </th>
+                      <th class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-600 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        Location
+                      </th>
+                      <th class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-720 px-4 py-3 text-left text-[#0d151c] w-60 text-sm font-medium leading-normal">Status</th>
+                      <th class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-840 px-4 py-3 text-left text-[#0d151c] w-60 text-[#49749c] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">true</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Ethan Harper
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">92</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Software Engineer
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        San Francisco, CA
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Olivia Bennett
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">88</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Product Manager
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        New York, NY
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Noah Carter
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">85</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Data Scientist
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Austin, TX
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Ava Mitchell
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">82</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        UX Designer
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Seattle, WA
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Liam Foster
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">79</td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Marketing Specialist
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Chicago, IL
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-120{display: none;}}
+                @container(max-width:240px){.table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-240{display: none;}}
+                @container(max-width:360px){.table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-360{display: none;}}
+                @container(max-width:480px){.table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-480{display: none;}}
+                @container(max-width:600px){.table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-600{display: none;}}
+                @container(max-width:720px){.table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-720{display: none;}}
+                @container(max-width:840px){.table-ac73567c-6bb0-4da2-bdf5-5736de333fe9-column-840{display: none;}}
+              </style>
+            </div>
+            <div class="flex justify-stretch">
+              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-end">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Reject</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0b80ee] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Shortlist</span>
+                </button>
+              </div>
+            </div>
+            <h3 class="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Resume Analysis</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 bg-[image:--select-button-svg] placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 bg-[image:--select-button-svg] placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 bg-[image:--select-button-svg] placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#cedce8] bg-slate-50">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-slate-50">
+                      <th class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-120 px-4 py-3 text-left text-[#0d151c] text-sm font-medium leading-normal"></th>
+                      <th class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-240 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        Candidate
+                      </th>
+                      <th class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-360 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        ATS Score
+                      </th>
+                      <th class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-480 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        Job Title
+                      </th>
+                      <th class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-600 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                        Location
+                      </th>
+                      <th class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-720 px-4 py-3 text-left text-[#0d151c] w-60 text-sm font-medium leading-normal">Status</th>
+                      <th class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-840 px-4 py-3 text-left text-[#0d151c] w-60 text-[#49749c] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">true</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Ethan Harper
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">92</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Software Engineer
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        San Francisco, CA
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Olivia Bennett
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">88</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Product Manager
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        New York, NY
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Noah Carter
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">85</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Data Scientist
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Austin, TX
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Ava Mitchell
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">82</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        UX Designer
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Seattle, WA
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedce8]">
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-120 h-[72px] px-4 py-2 text-sm font-normal leading-normal">false</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-240 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                        Liam Foster
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">79</td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Marketing Specialist
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                        Chicago, IL
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-720 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Applied</span>
+                        </button>
+                      </td>
+                      <td class="table-08eae351-0c88-468d-b1c4-0618d666ae65-column-840 h-[72px] px-4 py-2 w-60 text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-08eae351-0c88-468d-b1c4-0618d666ae65-column-120{display: none;}}
+                @container(max-width:240px){.table-08eae351-0c88-468d-b1c4-0618d666ae65-column-240{display: none;}}
+                @container(max-width:360px){.table-08eae351-0c88-468d-b1c4-0618d666ae65-column-360{display: none;}}
+                @container(max-width:480px){.table-08eae351-0c88-468d-b1c4-0618d666ae65-column-480{display: none;}}
+                @container(max-width:600px){.table-08eae351-0c88-468d-b1c4-0618d666ae65-column-600{display: none;}}
+                @container(max-width:720px){.table-08eae351-0c88-468d-b1c4-0618d666ae65-column-720{display: none;}}
+                @container(max-width:840px){.table-08eae351-0c88-468d-b1c4-0618d666ae65-column-840{display: none;}}
+              </style>
+            </div>
+            <div class="flex justify-stretch">
+              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-end">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Reject</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0b80ee] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Shortlist</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

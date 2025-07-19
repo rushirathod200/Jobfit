@@ -1,0 +1,305 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d141c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">JobFit Pro</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">              
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">About Us</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Contact Us</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Jobs</a>  
+  
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate"><a href="/register">Get started</a></span>
+              </button>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncates"><a href="/login">Log in</a></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBnwwTEM4koW0ECcaLGL1MvE6gTYG3wnMu5dh_0lNI-GT6Vmt-4eTfY7CoL2uEqyhb7mURuI4gZJRI9mtIeH2HTxd9vgTgdrJ9HGvon6BMDzOASicQVnv2A_9XdW0gA7iWHSZXhRKclF8dgbz80LE8VqH2agJc3I3hZJKZybAq_-eNeYfm7mTHad2bQ61qYmYOv2qVR-8RK0WGRKGvwUkagxj8ykCE6WtuQDTMFsT8rzs_62Lt4JL9P4MAFNhoCTv4vmhcjI0-");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Optimize your resume for any job
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      JobFit Pro helps you tailor your resume to match specific job descriptions, increasing your chances of getting noticed by applicant tracking systems (ATS).
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <a href="/login" class="truncate">Get started</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  How JobFit Pro works
+                </h1>
+                <p class="text-[#0d141c] text-base font-normal leading-normal max-w-[720px]">
+                  Our platform analyzes your resume and the job description, providing actionable insights to improve your ATS compatibility and overall resume quality.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                  <div class="text-[#0d141c]" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">Upload your resume and job description</h2>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Simply upload your resume and the job description for the position you're targeting.</p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                  <div class="text-[#0d141c]" data-icon="FileText" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-32-80a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,136Zm0,32a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,168Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">Receive instant feedback</h2>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Our AI-powered analysis provides a detailed report with suggestions for improvement.</p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                  <div class="text-[#0d141c]" data-icon="Presentation" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">Optimize and apply</h2>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Implement the recommended changes and apply with confidence.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  For job seekers
+                </h1>
+                <p class="text-[#0d141c] text-base font-normal leading-normal max-w-[720px]">
+                  Increase your chances of landing an interview by ensuring your resume passes ATS screening and highlights your most relevant skills and experience.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVhAvfRnonse-_Xm-H6xbYu8eHplJDbLwFjXiLdLY6_DBMNumVOnqvVNu96hcplEyMbD43nMarOheg1XH2NJ_5Yd4oVxa4WOQWFo4yYpus8yqH2TDA2v6GVG3FR6lIPcpMg8-NWe5p8eUgTWblnwApjtptzl44EmnuOQx288dU2SIhrwKZRisZ6Cy29AP5JaDPuQnmedmn7nVXw6w2Ayjg67khyihg8IPx_JgKxPZ9f1kAVAfP0UjI0vf2X9YwYTvqQfeijp1K");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d141c] text-base font-medium leading-normal">ATS optimization</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Optimize your resume for specific job descriptions to improve your ATS score.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtvaQeake0bviwlbfoU3jBRGMuwwU9HnpDkAxJ7kih8nTX1dk6dxgBFqrs4f4RRjWfSqE4IManso8z2fKaz8GZrvvm2KQ7fo7sfX6Sxwo8X1xZF3eNveU34GZ8YPYcX3Jht0352ODtxrQPAy8VXWJ4-UtxdpNgr-D461HQmpR3UvTtAdeKmlRHSPRcgQ65U8GrHCN7AdohDRk_gxT3YtUz9ROrpXkLtMTOAzgL1LtI8SaXYZp-bXYLWglqBU_QFQz_i-j24K46");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d141c] text-base font-medium leading-normal">Resume tailoring</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Tailor your resume content to match the requirements of each job application.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAo3KKv38hj3t2KsxKfMaeQPm-akWWXkcyE_pDXhI6dhCPmoP1OEjM1dEdpOrZs5Hla3elT45WdZW0FmNc7vtN2e_FLonwD27e1abn0j8qi1BCesNBYEA9_IBwukxs84dN_pVgXo1rV2WFBrBkUpNCxonX_BS0qncZCI1pSW_RmplFKkNGiYt0-_FCGlwM9Udb6cD9qIBBtt3K9VABoCczlWXad9m3NKBNsDmWFZsNRZM3SrMJiZL7Xxlqbg2ooMSHxTL65XMWz");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d141c] text-base font-medium leading-normal">Improved visibility</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">
+                      Increase your visibility to recruiters by ensuring your resume is easily searchable and relevant.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  For recruiters
+                </h1>
+                <p class="text-[#0d141c] text-base font-normal leading-normal max-w-[720px]">
+                  Streamline your hiring process by identifying the most qualified candidates quickly and efficiently.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA20ymgBBccZFV3tiLxn1J1Jn5P8oleUNuo6Ed-S6_PkudYa2VewhExJGfUjNznjVunIYGph2qML0yBCcMBXmJTVuvBQrCEZrzuReIjb5Q4jYPJ08M9_OaPl_qKedn_V4-7ZEK_cbcZk4M4EGNtbjDJXQhGNdhkzKhA06H6eOkasFzm63z6_BDTHgSsoI48GaJULTISKulYw8hg9Z9kWANpp434W9aeorBNIrXY2-_NDlB1Clik1crysZ28aDgLXIa4M2DdMgF_");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d141c] text-base font-medium leading-normal">Efficient screening</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Quickly screen resumes and identify candidates who meet the key requirements.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEmni98FprPcukBwvWzQokRDbyPqODC3DYv7oqmzfIdiSZLzWztEf-t83G1E9oUlevaNtahX_Jju62ONqf_SFoD8V_hTw9cKS8gocyTV4UaOBtamIYuVAHu5-uY7i0C3aZ-2iVlkNaRue4771CVyvReOFasTEVjL4heaiFeqc092Gr64DjcORcosdWLvxrq8m_KqRnAIp1pOSzLc-tTapHu5J4onsI40DzOzx3Ra0uso_peHuMBqGHRJeuRlzKl2t4Zfr-4NK3");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d141c] text-base font-medium leading-normal">Improved candidate quality</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Attract and identify candidates with the skills and experience most relevant to the role.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR9CVsPA3ACdFcG8JYrSIwg0qnyhfQHJaUf_pPoeKoDAT8fZOLZSM2ziAFU2RZwTiuEJmU67zAZtvQUcMgjODID7ZpoA7jIvKaQz-uglRzJYz5GkaWsVRXdsF62nv6aZAW-Nwb2wne0sGJNzEL0SdjMlVbtUzMjfXM6sYEZ0HAbLmzRhWh129YMp2ExxBmczjR9Yn3FPnMO0BTp2r0J7swJ6Lgd48rod0aGrRpKPsPqwPBCMFr0Lkz3WbKIwHRA7YTVTv-Wgay");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d141c] text-base font-medium leading-normal">Faster hiring</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Reduce time-to-hire by focusing on the most promising candidates.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAw0hCqEDH0tk0u_80NN6zCf5y7fW7qUkxOCCUqk7A0GhBx39gokCzqVcM2Fiivi8pycpod4o94yQ6QPfeY3Sckxilge2yRg-qmUibV2JJ-N7W3d6ubteppzQyqk_Cp-GXlAwoDcEEo2xsFQ3YK0UpliQjmgC9BLnfghtFdOtCkL5NJH5SBCFrqs2BRlow-rFXjYDAjT_vkjmHmHqihnP-NQW58-uUf5RhgALjHnsG7CS1WXeR-ARz4bt_sNoQHE6DLZlZ1djPu");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Get an ATS score preview</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#49739c] text-base font-normal leading-normal">Upload your resume and a job description to get a free preview of your ATS score.</p>
+                      <p class="text-[#49739c] text-base font-normal leading-normal">
+                        See how your resume stacks up against the job description. Get a detailed ATS score and actionable feedback to improve your chances.
+                      </p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#0c7ff2] text-slate-50 text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">Get a free preview</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="@container">
+              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                <div class="flex flex-col gap-2 text-center">
+                  <h1
+                    class=" text-[#0d141c] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                  >
+                    Ready to land your dream job?
+                  </h1>
+                  <p class="text-[#0d141c] text-base font-normal leading-normal max-w-[720px">Start optimizing your resume today with JobFit Pro.</p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                    >
+                      <span class="truncate">Get started</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Product</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Solutions</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Resources</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Pricing</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#49739c]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#49739c]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#49739c] text-base font-normal leading-normal">© 2024 JobFit Pro. All rights reserved.</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
