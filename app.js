@@ -117,7 +117,7 @@ app.post("/login", async (req, res) => {
 
   if (!email || !password) {
     return res.status(400).send("Email and password are required");
-  }
+  } 
 
   try {
     // First, try finding in userModel
